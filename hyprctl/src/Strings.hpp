@@ -172,14 +172,14 @@ property:
 flags:
     See 'hyprctl --help')#";
 
-const std::string_view SWITCHXKBLAYOUT_HELP = R"#(usage: [flags] switchxkblayout <device> <cmd>
+const std::string_view SWITCHXKBLAYOUT_HELP = R"#(usage: hyprctl [flags] switchxkblayout <device> <cmd>
 
 device:
     You can find the device using 'hyprctl devices' command
 
 cmd:
     'next' for next, 'prev' for previous, or ID for a specific one. IDs are
-    assigned based on their order in config file (keyboard_layout),
+    assigned based on their order in config file (input:kb_layout),
     starting from 0
 
 flags:
