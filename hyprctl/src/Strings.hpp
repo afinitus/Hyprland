@@ -80,6 +80,7 @@ const std::string_view HYPRPAPER_HELP = R"#(usage: hyprctl [flags] hyprpaper <re
 requests:
     wallpaper       → Issue a wallpaper to call a config wallpaper dynamically.
                       Arguments are [mon],[path],[fit_mode]. Fit mode is optional.
+    listactive      → List the active wallpaper for each monitor.
 
 flags:
     See 'hyprctl --help')#";
