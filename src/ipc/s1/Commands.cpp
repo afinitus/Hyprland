@@ -1121,9 +1121,9 @@ static std::string rollinglogRequest(eHyprCtlOutputFormat format, std::string re
     std::string result = "";
 
     if (format == eHyprCtlOutputFormat::FORMAT_JSON) {
-        result += "[\n\"log\":\"";
+        result += "{\n\"log\":\"";
         result += escapeJSONStrings(Log::logger->rolling());
-        result += "\"]";
+        result += "\"}";
     } else
         result = Log::logger->rolling();
 
