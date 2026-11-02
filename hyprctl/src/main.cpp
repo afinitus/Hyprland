@@ -379,7 +379,8 @@ void instancesRequest(bool json) {
                                   el.id, el.time, el.pid, el.wlSocket);
         }
 
-        result.pop_back();
+        if (!inst.empty())
+            result.pop_back();
         result += "\n]";
     }
 
