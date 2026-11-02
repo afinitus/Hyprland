@@ -332,7 +332,7 @@ I18n::CI18nEngine::CI18nEngine() {
         int assetsNo = std::stoi(vars.at("count"));
         if (assetsNo <= 1)
             return "Hyprland konnte {count} essentielle Ressource nicht laden, geben Sie dem Packager ihrer Distribution die Schuld für ein schlechtes Package!";
-        return "Hyprland konnte {count} essentielle Ressroucen nicht laden, geben Sie dem Packager ihrer Distribution die Schuld für ein schlechtes Package!";
+        return "Hyprland konnte {count} essentielle Ressourcen nicht laden, geben Sie dem Packager ihrer Distribution die Schuld für ein schlechtes Package!";
     });
     registerEntry("de_DE", TXT_KEY_NOTIF_INVALID_MONITOR_LAYOUT,
                   "Ihr Bildschirmlayout ist fehlerhaft aufgesetzt. Der Bildschirm {name} überlappt mit anderen Bildschirm(en) im Layout.\nBitte siehe im Wiki (Monitors Seite) für "
