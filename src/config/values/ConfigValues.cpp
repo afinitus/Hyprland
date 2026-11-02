@@ -496,8 +496,8 @@ std::vector<SP<IValue>> Values::getConfigValues() {
         MS<Bool>("gestures:workspace_swipe_forever", "if enabled, swiping will not clamp at the neighboring workspaces but continue to the further ones.", false),
         MS<Bool>("gestures:workspace_swipe_use_r", "if enabled, swiping will use the r prefix instead of the m prefix for finding workspaces.", false),
         MS<Int>("gestures:close_max_timeout", "Timeout for closing windows with the close gesture, in ms.", 1000, {.min = 10, .max = 2000}),
-        MS<Bool>("gestures:scrolling:move_snap_to_grid", "When releasing the scroll move gesture, whether it shoud try to snap to the grid.", true),
-        MS<Bool>("gestures:scrolling:move_snap_cursor", "When releasing the scroll move gesture, whether it shoud snap the cursor to the newly focused window.", true),
+        MS<Bool>("gestures:scrolling:move_snap_to_grid", "When releasing the scroll move gesture, whether it should try to snap to the grid.", true),
+        MS<Bool>("gestures:scrolling:move_snap_cursor", "When releasing the scroll move gesture, whether it should snap the cursor to the newly focused window.", true),
         /*
          * group:
          */
@@ -680,7 +680,7 @@ std::vector<SP<IValue>> Values::getConfigValues() {
         MS<Bool>("render:icc_vcgt_enabled", "Enable sending VCGT ramps to KMS with ICC profiles", true),
         MS<Bool>("render:use_shader_blur_blend", "Use experimental blurred bg blending", false),
         MS<Int>("render:use_fp16", "Use experimental internal FP16 buffer.", 2, {.min = 0, .max = 2, .map = OptionMap{{"disable", 0}, {"enable", 1}, {"auto", 2}}}),
-        MS<Int>("render:keep_unmodified_copy", "Keep umodified SDR frame copy for sreensharing.", 2,
+        MS<Int>("render:keep_unmodified_copy", "Keep unmodified SDR frame copy for screensharing.", 2,
                 {.min = 0, .max = 2, .map = OptionMap{{"disable", 0}, {"enable", 1}, {"auto", 2}}}),
         MS<Int>("render:non_shader_cm_interop", "non_shader_cm interaction with ctm proto (hyprsunset and similar).", 2,
                 {.min = 0, .max = 2, .map = OptionMap{{"disable", 0}, {"enable", 1}, {"auto", 2}}}),
